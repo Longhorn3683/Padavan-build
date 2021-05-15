@@ -1,4 +1,4 @@
-name: Build Padavan for PSG1218
+name: Build Padavan for Phicomm K2P
 
 on: 
   release:
@@ -37,7 +37,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: PSG1218_nano
+        TNAME: K2P_nano
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
